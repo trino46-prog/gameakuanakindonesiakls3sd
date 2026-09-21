@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="id"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260921-05-147306f","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YACgEZulLoA,0","Arial Narrow":"YAGyDvJ_4Ts,0","Arial Rounded MT Bold":"YAFcfoaHu-s,0","Arial":"YAGyDvJ_4Ts,0","Avenir Next":"YAFcfmNq6UY,0","Baloo 2":"YADK30bC6HQ,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAFcfvtOAUY,1","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHQutsX00Q,0","Hanken Grotesk":"YAFcfhwp99E,0","Helvetica Neue":"YAFcf6CtJfI,0","Helvetica":"YAFcf6CtJfI,0","IBM Plex Mono":"YAFdJkmvhGI,0","Impact":"YAFcfnjI7Vk,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YADK3zbC6RM,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Pacifico":"YADLjORQ1u4,0","Phantom Sans":"YAFdJvgJ5TU,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAGvf3_u0_Q,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Source Serif 4":"YACgEfdj394,0","Space Grotesk":"YADZ-dYEmhg,0","Space Mono":"YADW1-vpsoc,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","UV Display":"YAEdVfSSpYo,0","UV Sans":"YAFdJvgJ5TU,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YAD1aFjegN8,0","ui-sans-serif":"YACkoD1yZN0,0"}}');</script><script src="/_sdk/83d6dfdadcd4750a.telemetry_sdk.js" integrity="sha512-XS4Dvzp6vbagZS9vFErihvr8aO3S0tH78KWUefn06fmL4WYqryBtZj/IOLITYj7dFA4gPVvPg1W/JB1DK3uLNQ=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petualangan Aku Anak Indonesia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;600;700;800&amp;family=Fraunces:opsz,wght@9..144,700;9..144,800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --red: #e63946;
+      --red-dark: #c92434;
+      --sky: #dff4ff;
+      --navy: #12335b;
+      --yellow: #ffd34e;
+      --ink: #18324d;
+      --mint: #ddf7e6;
+    }
+
+    * { box-sizing: border-box; }
+    html { background: #dff4ff; }
+    body {
+      margin: 0;
+      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
+      font-family: "Alegreya Sans", sans-serif;
+      color: var(--ink);
+      overflow-x: hidden;
+    }
+
+    button, input { font: inherit; }
+    button { -webkit-tap-highlight-color: transparent; }
+    button:focus-visible, input:focus-visible {
+      outline: 4px solid #ffd34e;
+      outline-offset: 3px;
+    }
+
+    .app-shell {
+      width: 100%;
+      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 12% 8%, rgba(255,255,255,.96) 0 38px, transparent 40px),
+        radial-gradient(circle at 86% 17%, rgba(255,255,255,.8) 0 55px, transparent 57px),
+        linear-gradient(180deg, #bfeaff 0%, #eaf9ff 56%, #fdf9e8 100%);
+    }
+
+    .cloud {
+      position: absolute;
+      color: rgba(255,255,255,.92);
+      animation: drift 10s ease-in-out infinite alternate;
+      pointer-events: none;
+    }
+    .cloud.one { top: 7%; left: 5%; font-size: 4rem; }
+    .cloud.two { top: 20%; right: 8%; font-size: 3rem; animation-delay: -4s; }
+    .cloud.three { bottom: 11%; left: 7%; font-size: 3rem; animation-delay: -2s; }
+
+    @keyframes drift { from { transform: translateX(-8px); } to { transform: translateX(18px); } }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(18px) scale(.98); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    @keyframes bob {
+      0%, 100% { transform: translateY(0) rotate(-2deg); }
+      50% { transform: translateY(-9px) rotate(2deg); }
+    }
+    @keyframes pop {
+      0% { transform: scale(.75); opacity: 0; }
+      75% { transform: scale(1.08); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    @keyframes confetti {
+      from { transform: translateY(-30px) rotate(0); opacity: 1; }
+      to { transform: translateY(540px) rotate(540deg); opacity: 0; }
+    }
+
+    .view {
+      display: none;
+      width: 100%;
+      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
+      padding: 24px 16px;
+      position: relative;
+      z-index: 1;
+    }
+    .view.active {
+      display: flex;
+      animation: rise .38s ease-out both;
+    }
+
+    .game-card {
+      width: min(100%, 760px);
+      margin: auto;
+      background: rgba(255,255,255,.95);
+      border: 4px solid #fff;
+      box-shadow: 0 14px 0 rgba(18,51,91,.11), 0 23px 36px rgba(18,51,91,.16);
+      border-radius: 30px;
+    }
+
+    .hero-flag {
+      width: 114px;
+      height: 78px;
+      border-radius: 13px;
+      overflow: hidden;
+      background: linear-gradient(#e63946 50%, #fff 50%);
+      border: 5px solid #fff;
+      box-shadow: 0 9px 0 rgba(18,51,91,.11);
+      display: grid;
+      place-items: center;
+      margin: 0 auto 18px;
+      animation: bob 2.8s ease-in-out infinite;
+    }
+
+    .title-font { font-family: "Fraunces", serif; }
+    .primary-btn, .next-btn {
+      background: var(--red);
+      color: #fff;
+      border: 0;
+      border-radius: 17px;
+      box-shadow: 0 6px 0 var(--red-dark);
+      transition: transform .16s ease, box-shadow .16s ease, filter .16s ease;
+    }
+    .primary-btn:hover, .next-btn:hover { filter: brightness(1.06); transform: translateY(-2px); }
+    .primary-btn:active, .next-btn:active { transform: translateY(5px); box-shadow: 0 1px 0 var(--red-dark); }
+
+    .secondary-btn {
+      background: #fff;
+      color: var(--navy);
+      border: 2px solid #bfddea;
+      border-radius: 17px;
+      transition: background .16s ease;
+    }
+    .secondary-btn:hover { background: #effaff; }
+
+    .instruction-item {
+      background: #f3fbff;
+      border: 1px solid #d1eaf5;
+      border-radius: 14px;
+    }
+
+    .progress-track {
+      height: 15px;
+      background: #dbeaf0;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      width: 10%;
+      background: linear-gradient(90deg, #e63946, #ff6974);
+      border-radius: inherit;
+      transition: width .35s ease;
+    }
+
+    .timer-box {
+      background: #fff5cc;
+      border: 2px solid #ffd34e;
+      border-radius: 15px;
+      font-weight: 800;
+      color: #805b00;
+    }
+
+    .question-card {
+      background: #f9fdff;
+      border: 2px solid #d9eff8;
+      border-radius: 24px;
+    }
+
+    .answer-btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-align: left;
+      border: 2px solid #cce7f2;
+      background: #fff;
+      border-radius: 17px;
+      padding: 13px 15px;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--ink);
+      transition: transform .15s ease, border-color .15s ease, background .15s ease;
+    }
+    .answer-btn:hover:not(:disabled) {
+      border-color: #4aa8d0;
+      transform: translateX(4px);
+      background: #f0fbff;
+    }
+    .answer-btn:disabled { cursor: default; }
+    .letter-badge {
+      width: 34px;
+      height: 34px;
+      flex: 0 0 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #dff4ff;
+      color: #176e9a;
+      font-weight: 800;
+    }
+    .answer-btn.correct {
+      border-color: #44b86f;
+      background: #e7faed;
+      color: #1e6f3c;
+    }
+    .answer-btn.incorrect {
+      border-color: #e95762;
+      background: #ffedf0;
+      color: #9c2630;
+    }
+    .answer-btn.correct .letter-badge { background: #44b86f; color: #fff; }
+    .answer-btn.incorrect .letter-badge { background: #e95762; color: #fff; }
+
+    .feedback {
+      display: none;
+      border-radius: 17px;
+      padding: 13px 16px;
+      font-weight: 800;
+      font-size: 1.16rem;
+      text-align: center;
+    }
+    .feedback.visible { display: block; animation: pop .28s ease-out both; }
+    .feedback-good { background: #e4f9e9; color: #1e773f; border: 2px solid #7ad797; }
+    .feedback-try { background: #fff2d8; color: #8c5a00; border: 2px solid #ffc95a; }
+    .feedback-time { background: #ffe8eb; color: #a52b36; border: 2px solid #f58a94; }
+
+    .sun-art {
+      width: 100px;
+      height: 70px;
+      margin: 0 auto;
+      position: relative;
+      display: none;
+    }
+    .sun-art.visible { display: block; }
+    .sun-art .sun {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #ffd34e;
+      position: absolute;
+      top: 0;
+      left: 30px;
+      box-shadow: 0 0 0 8px rgba(255,211,78,.25);
+    }
+    .sun-art .ground {
+      position: absolute;
+      width: 100%;
+      height: 8px;
+      background: #69b965;
+      border-radius: 99px;
+      bottom: 4px;
+    }
+    .compass {
+      width: 130px;
+      height: 130px;
+      position: relative;
+      display: none;
+      margin: 4px auto 10px;
+      border: 5px solid #d9eff8;
+      background: #eefaff;
+      border-radius: 50%;
+    }
+    .compass.visible { display: block; }
+    .compass::before, .compass::after {
+      content: "";
+      position: absolute;
+      background: #75b8d5;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .compass::before { width: 4px; height: 92px; }
+    .compass::after { width: 92px; height: 4px; }
+    .compass b { position: absolute; color: var(--navy); font-size: .92rem; z-index: 1; }
+    .compass .north { top: 5px; left: 50%; transform: translateX(-50%); }
+    .compass .east { right: 6px; top: 50%; transform: translateY(-50%); }
+    .compass .south { bottom: 5px; left: 50%; transform: translateX(-50%); }
+    .compass .west { left: 6px; top: 50%; transform: translateY(-50%); }
+    .compass .needle {
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: 50%;
+      top: 20px;
+      transform: translateX(-50%);
+      border-left: 9px solid transparent;
+      border-right: 9px solid transparent;
+      border-bottom: 45px solid #e63946;
+      z-index: 2;
+    }
+
+    .confetti-piece {
+      position: absolute;
+      top: -25px;
+      width: 11px;
+      height: 19px;
+      border-radius: 3px;
+      animation: confetti 3.2s linear infinite;
+      pointer-events: none;
+    }
+
+    .hidden { display: none !important; }
+
+    @media (max-width: 480px) {
+      .view { padding: 16px 12px; }
+      .game-card { border-radius: 24px; }
+      .answer-btn { font-size: 1.05rem; padding: 12px; }
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="/_sdk/8de366929c5f3b48.data_sdk.js" type="text/javascript" integrity="sha512-TyQ8k8cZj66xe/aENmn6RyZpdOFZXbAo5+KBG3PeFM+Q4qMTHU8xAqmq4ADClNfPrstgQYV6OzZHwLTnElzB2g=="></script>
+  <script src="/_sdk/0ddbbee1c66b1212.editing_sdk.js" type="text/javascript" integrity="sha512-HQn5LM1yruQSbY78ATUril6QeOJ9xj7KqO64ltLtb4vBwI5Qv3/tloFFOndBPZTNZoeV5xKzuth5y6FTi9crsg=="></script>
+  <script src="/_sdk/765e1fea0cec97ce.resizing_sdk.js" type="text/javascript" integrity="sha512-IRTJnqww0+HQ5V/LlWEQrlD5SrYHaVvaeVoNe8HYQXoaguzUGheSd9+n9s6WOgaTcEH0g37DuINHZ9aqfzWjlw=="></script>
+ </head>
+ <body data-template-id="__page-root" style="background: linear-gradient(rgb(191, 234, 255), rgb(253, 249, 232));">
+  <div class="app-shell">
+   <div class="cloud one">
+    ☁️
+   </div>
+   <div class="cloud two">
+    ☁️
+   </div>
+   <div class="cloud three">
+    ☁️
+   </div>
+   <main aria-live="polite">
+    <section id="welcome-view" class="view active items-center justify-center" aria-labelledby="game-title">
+     <div class="game-card max-w-2xl px-6 py-9 text-center sm:px-12 sm:py-12">
+      <div class="hero-flag" aria-hidden="true">
+       <span class="text-3xl">🇮🇩</span>
+      </div>
+      <p data-template-id="welcome-tag" class="canva-tag mb-2 font-bold tracking-widest" style="color: rgb(230, 57, 70); font-weight: 800; font-style: normal; font-size: 18px; letter-spacing: 0.12rem;">PETUALANGAN BELAJAR</p>
+      <h1 id="game-title" data-template-id="game-title" class="canva-text title-font mb-4 font-extrabold leading-tight" style="color: rgb(18, 51, 91); font-weight: 800; font-style: normal; font-size: 36px;">PETUALANGAN AKU ANAK INDONESIA 🇮🇩</h1>
+      <p data-template-id="game-subtitle" class="canva-text mb-5 text-xl font-bold text-[#176e9a]" style="color: rgb(23, 110, 154); font-weight: 700; font-style: normal; font-size: 22px;">Tes Formatif Pendidikan Pancasila – Kelas 3 SD</p>
+      <p data-template-id="welcome-description" class="canva-text mx-auto mb-8 max-w-xl text-xl leading-relaxed" style="color: rgb(24, 50, 77); font-weight: 400; font-style: normal; font-size: 21px;">Yuk, uji pengetahuanmu tentang Indonesia, persatuan, keberagaman, dan arah mata angin!</p><button id="start-button" data-template-id="start-button" class="canva-button primary-btn w-full px-6 py-4 text-xl font-extrabold sm:w-auto" style="background: rgb(230, 57, 70); color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 22px;">▶ MULAI BERMAIN</button>
+     </div>
+    </section>
+    <section id="name-view" class="view items-center justify-center" aria-labelledby="name-heading">
+     <div class="game-card max-w-xl px-6 py-9 sm:px-12">
+      <div class="mb-4 text-center text-5xl" aria-hidden="true">
+       👋
+      </div>
+      <h2 id="name-heading" data-template-id="name-heading" class="canva-text title-font text-center font-extrabold" style="color: rgb(18, 51, 91); font-weight: 800; font-style: normal; font-size: 27px;">Siapa namamu?</h2>
+      <p data-template-id="name-helper" class="canva-text mt-3 text-center text-lg" style="color: rgb(71, 101, 122); font-weight: 400; font-style: normal; font-size: 19px;">Tulis namamu dulu, ya. Setelah itu kita mulai petualangan!</p>
+      <form id="name-form" class="mt-7"><label data-template-id="name-label" class="canva-text mb-2 block text-lg font-bold" for="student-name" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">Nama kamu</label> <input id="student-name" class="canva-input w-full rounded-2xl border-2 border-[#a9d8ea] bg-[#f8fdff] px-5 py-4 text-xl text-[#18324d] placeholder:text-[#7c9dad]" type="text" maxlength="40" autocomplete="name">
+       <p id="name-error" data-template-id="name-error" class="canva-text mt-3 hidden text-center font-bold text-[#c92434]" style="color: rgb(201, 36, 52); font-weight: 700; font-style: normal; font-size: 18px;">Yuk, tuliskan namamu terlebih dahulu!</p><button data-template-id="continue-button" class="canva-button primary-btn mt-6 w-full px-6 py-4 text-xl font-extrabold" type="submit" style="background: rgb(230, 57, 70); color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 22px;">LANJUT</button>
+      </form>
+     </div>
+    </section>
+    <section id="instruction-view" class="view items-center justify-center" aria-labelledby="instruction-heading">
+     <div class="game-card max-w-2xl px-6 py-8 sm:px-10">
+      <div class="mb-2 text-center text-4xl" aria-hidden="true">
+       🧭
+      </div>
+      <h2 id="instruction-heading" data-template-id="instruction-heading" class="canva-text title-font text-center font-extrabold" style="color: rgb(18, 51, 91); font-weight: 800; font-style: normal; font-size: 27px;">Petunjuk Permainan</h2>
+      <p data-template-id="instruction-intro" class="canva-text mt-2 text-center text-lg" style="color: rgb(71, 101, 122); font-weight: 400; font-style: normal; font-size: 19px;">Baca pelan-pelan, lalu bermainlah dengan jujur dan percaya diri!</p>
+      <div class="mt-6 grid gap-3 sm:grid-cols-2">
+       <p data-template-id="instruction-1" class="canva-text instruction-item p-3 text-lg font-bold" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">🎯 Jawablah 10 soal.</p>
+       <p data-template-id="instruction-2" class="canva-text instruction-item p-3 text-lg font-bold" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">⏱️ Setiap soal maksimal 2 menit.</p>
+       <p data-template-id="instruction-3" class="canva-text instruction-item p-3 text-lg font-bold" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">⭐ Jawaban benar dan cepat mendapat poin lebih tinggi.</p>
+       <p data-template-id="instruction-4" class="canva-text instruction-item p-3 text-lg font-bold" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">💡 Bacalah soal dengan teliti.</p>
+       <p data-template-id="instruction-5" class="canva-text instruction-item p-3 text-lg font-bold sm:col-span-2" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">❤️ Kerjakan dengan jujur dan percaya diri.</p>
+      </div>
+      <aside data-template-id="points-panel" class="canva-panel mt-6 rounded-2xl p-5" style="background: rgb(223, 244, 255);">
+       <h3 data-template-id="points-heading" class="canva-text text-center font-extrabold" style="color: rgb(18, 51, 91); font-weight: 800; font-style: normal; font-size: 21px;">Sistem Poin</h3>
+       <div class="mt-3 grid grid-cols-2 gap-2 text-center text-base font-bold sm:grid-cols-3">
+        <p data-template-id="points-1" class="canva-text rounded-xl bg-white p-2" style="color: rgb(30, 119, 63); font-weight: 700; font-style: normal; font-size: 16px;">0–30 detik
+100 poin</p>
+        <p data-template-id="points-2" class="canva-text rounded-xl bg-white p-2" style="color: rgb(23, 110, 154); font-weight: 700; font-style: normal; font-size: 16px;">31–60 detik
+80 poin</p>
+        <p data-template-id="points-3" class="canva-text rounded-xl bg-white p-2" style="color: rgb(128, 91, 0); font-weight: 700; font-style: normal; font-size: 16px;">61–90 detik
+60 poin</p>
+        <p data-template-id="points-4" class="canva-text rounded-xl bg-white p-2" style="color: rgb(156, 38, 48); font-weight: 700; font-style: normal; font-size: 16px;">91–120 detik
+40 poin</p>
+        <p data-template-id="points-5" class="canva-text rounded-xl bg-white p-2" style="color: rgb(123, 86, 96); font-weight: 700; font-style: normal; font-size: 16px;">Salah / habis
+0 poin</p>
+        <p data-template-id="points-max" class="canva-text rounded-xl bg-white p-2" style="color: rgb(18, 51, 91); font-weight: 800; font-style: normal; font-size: 16px;">Maksimal
+1.000 poin</p>
+       </div>
+      </aside><button id="adventure-button" data-template-id="adventure-button" class="canva-button primary-btn mt-7 w-full px-6 py-4 text-xl font-extrabold" type="button" style="background: rgb(230, 57, 70); color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 22px;">🚀 MULAI PETUALANGAN</button>
+     </div>
+    </section>
+    <section id="quiz-view" class="view items-center justify-center" aria-labelledby="question-heading">
+     <div class="game-card max-w-3xl px-5 py-6 sm:px-9 sm:py-8">
+      <header>
+       <div class="mb-2 flex items-center justify-between gap-3">
+        <p id="question-counter" class="font-extrabold text-[#176e9a]">Soal 1 dari 10</p>
+        <div class="timer-box flex items-center gap-2 px-3 py-2" aria-label="Waktu tersisa"><i data-lucide="clock-3" class="h-5 w-5"></i> <span id="timer-display">02:00</span>
+        </div>
+       </div>
+       <div class="progress-track" aria-label="Kemajuan permainan">
+        <div id="progress-fill" class="progress-fill"></div>
+       </div>
+      </header>
+      <div class="question-card mt-6 px-5 py-6 sm:px-8">
+       <div id="sun-illustration" class="sun-art" aria-hidden="true">
+        <div class="sun"></div>
+        <div class="ground"></div>
+       </div>
+       <div id="compass-illustration" class="compass" aria-hidden="true"><b class="north">Utara</b><b class="east">Timur</b><b class="south">Selatan</b><b class="west">Barat</b><span class="needle"></span>
+       </div>
+       <div class="question-slide active" data-question="0">
+        <h2 id="question-heading" data-template-id="question-1" class="canva-text text-center font-extrabold leading-snug" style="color: rgb(18, 51, 91); font-weight: 800; font-style: normal; font-size: 27px;">Kita harus bangga menjadi anak Indonesia karena Indonesia memiliki ....</h2>
+        <div class="mt-6 grid gap-3"><button class="canva-button answer-btn" type="button" data-option="A"><span class="letter-badge">A</span><span data-template-id="q1-a" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">satu budaya saja</span></button> <button class="canva-button answer-btn" type="button" data-option="B"><span class="letter-badge">B</span><span data-template-id="q1-b" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">banyak suku dan budaya</span></button> <button class="canva-button answer-btn" type="button" data-option="C"><span class="letter-badge">C</span><span data-template-id="q1-c" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">satu bahasa daerah</span></button> <button class="canva-button answer-btn" type="button" data-option="D"><span class="letter-badge">D</span><span data-template-id="q1-d" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">sedikit pulau</span></button>
+        </div>
+       </div>
+       <div class="question-slide hidden" data-question="1">
+        <h2 data-template-id="question-2" class="canva-text text-center font-extrabold leading-snug" style="color: rgb(18, 51, 91); font-weight: 800; font-style: normal; font-size: 27px;">Bahasa yang digunakan untuk mempersatukan masyarakat Indonesia adalah ....</h2>
+        <div class="mt-6 grid gap-3"><button class="canva-button answer-btn" type="button" data-option="A"><span class="letter-badge">A</span><span data-template-id="q2-a" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">bahasa daerah</span></button> <button class="canva-button answer-btn" type="button" data-option="B"><span class="letter-badge">B</span><span data-template-id="q2-b" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">bahasa asing</span></button> <button class="canva-button answer-btn" type="button" data-option="C"><span class="letter-badge">C</span><span data-template-id="q2-c" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">Bahasa Indonesia</span></button> <button class="canva-button answer-btn" type="button" data-option="D"><span class="letter-badge">D</span><span data-template-id="q2-d" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">bahasa isyarat</span></button>
+        </div>
+       </div>
+       <div class="question-slide hidden" data-question="2">
+        <h2 data-template-id="question-3" class="canva-text text-center font-extrabold leading-snug" style="color: rgb(18, 51, 91); font-weight: 800; font-style: normal; font-size: 27px;">Rani berasal dari suku yang berbeda dengan Siti. Sikap mereka sebaiknya ....</h2>
+        <div class="mt-6 grid gap-3"><button class="canva-button answer-btn" type="button" data-option="A"><span class="letter-badge">A</span><span data-template-id="q3-a" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">saling menjauhi</span></button> <button class="canva-button answer-btn" type="button" data-option="B"><span class="letter-badge">B</span><span data-template-id="q3-b" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">saling mengejek</span></button> <button class="canva-button answer-btn" type="button" data-option="C"><span class="letter-badge">C</span><span data-template-id="q3-c" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">tetap berteman dan saling menghargai</span></button> <button class="canva-button answer-btn" type="button" data-option="D"><span class="letter-badge">D</span><span data-template-id="q3-d" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">hanya berteman dengan suku yang sama</span></button>
+        </div>
+       </div>
+       <div class="question-slide hidden" data-question="3">
+        <h2 data-template-id="question-4" class="canva-text text-center font-extrabold leading-snug" style="color: rgb(18, 51, 91); font-weight: 800; font-style: normal; font-size: 27px;">Indonesia memiliki banyak budaya. Contoh budaya Indonesia adalah ....</h2>
+        <div class="mt-6 grid gap-3"><button class="canva-button answer-btn" type="button" data-option="A"><span class="letter-badge">A</span><span data-template-id="q4-a" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">rumah adat dan tarian daerah</span></button> <button class="canva-button answer-btn" type="button" data-option="B"><span class="letter-badge">B</span><span data-template-id="q4-b" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">permainan dari luar negeri saja</span></button> <button class="canva-button answer-btn" type="button" data-option="C"><span class="letter-badge">C</span><span data-template-id="q4-c" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">bahasa asing</span></button> <button class="canva-button answer-btn" type="button" data-option="D"><span class="letter-badge">D</span><span data-template-id="q4-d" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">makanan dari satu daerah saja</span></button>
+        </div>
+       </div>
+       <div class="question-slide hidden" data-question="4">
+        <h2 data-template-id="question-5" class="canva-text text-center font-extrabold leading-snug" style="color: rgb(18, 51, 91); font-weight: 800; font-style: normal; font-size: 27px;">Saat teman sedang berbicara menggunakan bahasa daerahnya, sikap kita adalah ....</h2>
+        <div class="mt-6 grid gap-3"><button class="canva-button answer-btn" type="button" data-option="A"><span class="letter-badge">A</span><span data-template-id="q5-a" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">menertawakannya</span></button> <button class="canva-button answer-btn" type="button" data-option="B"><span class="letter-badge">B</span><span data-template-id="q5-b" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">mengejek bahasanya</span></button> <button class="canva-button answer-btn" type="button" data-option="C"><span class="letter-badge">C</span><span data-template-id="q5-c" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">menghargainya</span></button> <button class="canva-button answer-btn" type="button" data-option="D"><span class="letter-badge">D</span><span data-template-id="q5-d" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">menyuruhnya diam</span></button>
+        </div>
+       </div>
+       <div class="question-slide hidden" data-question="5">
+        <h2 data-template-id="question-6" class="canva-text text-center font-extrabold leading-snug" style="color: rgb(18, 51, 91); font-weight: 800; font-style: normal; font-size: 27px;">Matahari terbit dari arah ....</h2>
+        <div class="mt-6 grid gap-3"><button class="canva-button answer-btn" type="button" data-option="A"><span class="letter-badge">A</span><span data-template-id="q6-a" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">Barat</span></button> <button class="canva-button answer-btn" type="button" data-option="B"><span class="letter-badge">B</span><span data-template-id="q6-b" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">Timur</span></button> <button class="canva-button answer-btn" type="button" data-option="C"><span class="letter-badge">C</span><span data-template-id="q6-c" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">Utara</span></button> <button class="canva-button answer-btn" type="button" data-option="D"><span class="letter-badge">D</span><span data-template-id="q6-d" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">Selatan</span></button>
+        </div>
+       </div>
+       <div class="question-slide hidden" data-question="6">
+        <h2 data-template-id="question-7" class="canva-text text-center font-extrabold leading-snug" style="color: rgb(18, 51, 91); font-weight: 800; font-style: normal; font-size: 27px;">Contoh sikap mencintai Indonesia di sekolah adalah ....</h2>
+        <div class="mt-6 grid gap-3"><button class="canva-button answer-btn" type="button" data-option="A"><span class="letter-badge">A</span><span data-template-id="q7-a" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">membuang sampah sembarangan</span></button> <button class="canva-button answer-btn" type="button" data-option="B"><span class="letter-badge">B</span><span data-template-id="q7-b" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">bertengkar dengan teman</span></button> <button class="canva-button answer-btn" type="button" data-option="C"><span class="letter-badge">C</span><span data-template-id="q7-c" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">menjaga kebersihan sekolah</span></button> <button class="canva-button answer-btn" type="button" data-option="D"><span class="letter-badge">D</span><span data-template-id="q7-d" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">mengejek budaya teman</span></button>
+        </div>
+       </div>
+       <div class="question-slide hidden" data-question="7">
+        <h2 data-template-id="question-8" class="canva-text text-center font-extrabold leading-snug" style="color: rgb(18, 51, 91); font-weight: 800; font-style: normal; font-size: 27px;">Edo memiliki teman dari daerah yang berbeda. Ia mengajak temannya bermain bersama. Sikap Edo menunjukkan ....</h2>
+        <div class="mt-6 grid gap-3"><button class="canva-button answer-btn" type="button" data-option="A"><span class="letter-badge">A</span><span data-template-id="q8-a" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">persatuan</span></button> <button class="canva-button answer-btn" type="button" data-option="B"><span class="letter-badge">B</span><span data-template-id="q8-b" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">permusuhan</span></button> <button class="canva-button answer-btn" type="button" data-option="C"><span class="letter-badge">C</span><span data-template-id="q8-c" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">kesombongan</span></button> <button class="canva-button answer-btn" type="button" data-option="D"><span class="letter-badge">D</span><span data-template-id="q8-d" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">perbedaan</span></button>
+        </div>
+       </div>
+       <div class="question-slide hidden" data-question="8">
+        <h2 data-template-id="question-9" class="canva-text text-center font-extrabold leading-snug" style="color: rgb(18, 51, 91); font-weight: 800; font-style: normal; font-size: 27px;">Jika kita menemukan teman yang berbeda suku, agama, atau budaya, kita harus ....</h2>
+        <div class="mt-6 grid gap-3"><button class="canva-button answer-btn" type="button" data-option="A"><span class="letter-badge">A</span><span data-template-id="q9-a" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">menjauhinya</span></button> <button class="canva-button answer-btn" type="button" data-option="B"><span class="letter-badge">B</span><span data-template-id="q9-b" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">menghormatinya</span></button> <button class="canva-button answer-btn" type="button" data-option="C"><span class="letter-badge">C</span><span data-template-id="q9-c" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">mengejeknya</span></button> <button class="canva-button answer-btn" type="button" data-option="D"><span class="letter-badge">D</span><span data-template-id="q9-d" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">memusuhinya</span></button>
+        </div>
+       </div>
+       <div class="question-slide hidden" data-question="9">
+        <h2 data-template-id="question-10" class="canva-text text-center font-extrabold leading-snug" style="color: rgb(18, 51, 91); font-weight: 800; font-style: normal; font-size: 27px;">Jika kita menghadap ke arah Utara, maka arah yang berada di sebelah kanan kita adalah ....</h2>
+        <div class="mt-6 grid gap-3"><button class="canva-button answer-btn" type="button" data-option="A"><span class="letter-badge">A</span><span data-template-id="q10-a" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">Barat</span></button> <button class="canva-button answer-btn" type="button" data-option="B"><span class="letter-badge">B</span><span data-template-id="q10-b" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">Timur</span></button> <button class="canva-button answer-btn" type="button" data-option="C"><span class="letter-badge">C</span><span data-template-id="q10-c" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">Selatan</span></button> <button class="canva-button answer-btn" type="button" data-option="D"><span class="letter-badge">D</span><span data-template-id="q10-d" class="canva-text" style="color: rgb(24, 50, 77); font-weight: 700; font-style: normal; font-size: 18px;">Utara</span></button>
+        </div>
+       </div>
+      </div>
+      <div id="feedback-correct" data-template-id="feedback-correct" class="canva-banner feedback feedback-good mt-5" style="background: rgb(228, 249, 233); color: rgb(30, 119, 63); font-weight: 800; font-style: normal; font-size: 20px;">🎉 BENAR! Hebat!</div>
+      <div id="feedback-wrong" data-template-id="feedback-wrong" class="canva-banner feedback feedback-try mt-5" style="background: rgb(255, 242, 216); color: rgb(140, 90, 0); font-weight: 800; font-style: normal; font-size: 20px;">😊 Belum tepat. Tetap semangat!</div>
+      <div id="feedback-time" data-template-id="feedback-time" class="canva-banner feedback feedback-time mt-5" style="background: rgb(255, 232, 235); color: rgb(165, 43, 54); font-weight: 800; font-style: normal; font-size: 20px;">⏰ Waktu habis!</div><button id="next-button" data-template-id="next-button" class="canva-button next-btn mt-5 hidden w-full px-6 py-4 text-xl font-extrabold" type="button" style="background: rgb(230, 57, 70); color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 21px;">SOAL BERIKUTNYA →</button>
+     </div>
+    </section>
+    <section id="result-view" class="view items-center justify-center" aria-labelledby="result-heading">
+     <div id="confetti-zone" aria-hidden="true"></div>
+     <div class="game-card max-w-2xl px-6 py-9 text-center sm:px-12">
+      <div class="mb-2 text-5xl" aria-hidden="true">
+       🎉
+      </div>
+      <h2 id="result-heading" data-template-id="result-heading" class="canva-text title-font font-extrabold" style="color: rgb(18, 51, 91); font-weight: 800; font-style: normal; font-size: 27px;">PETUALANGAN SELESAI!</h2>
+      <p id="student-celebration" class="mt-2 text-2xl font-extrabold text-[#176e9a]"></p>
+      <div class="mx-auto mt-6 max-w-sm rounded-3xl bg-[#12335b] px-6 py-6 text-white shadow-lg">
+       <p data-template-id="total-points-label" class="canva-text text-lg font-bold tracking-wider" style="color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 18px;">⭐ TOTAL POIN</p>
+       <p id="total-score" class="title-font mt-1 text-5xl font-extrabold">0 / 1000</p>
+      </div>
+      <div class="mt-6 grid grid-cols-2 gap-3 text-left sm:grid-cols-4">
+       <div class="rounded-2xl bg-[#e7faed] p-3 text-center">
+        <span class="text-2xl">✅</span>
+        <p data-template-id="correct-label" class="canva-text mt-1 font-bold" style="color: rgb(30, 119, 63); font-weight: 700; font-style: normal; font-size: 16px;">Benar</p><strong id="correct-count" class="text-xl">0</strong>
+       </div>
+       <div class="rounded-2xl bg-[#ffedf0] p-3 text-center">
+        <span class="text-2xl">❌</span>
+        <p data-template-id="wrong-label" class="canva-text mt-1 font-bold" style="color: rgb(156, 38, 48); font-weight: 700; font-style: normal; font-size: 16px;">Salah</p><strong id="wrong-count" class="text-xl">0</strong>
+       </div>
+       <div class="rounded-2xl bg-[#fff5d9] p-3 text-center">
+        <span class="text-2xl">⏰</span>
+        <p data-template-id="unanswered-label" class="canva-text mt-1 font-bold" style="color: rgb(128, 91, 0); font-weight: 700; font-style: normal; font-size: 16px;">Tidak dijawab</p><strong id="unanswered-count" class="text-xl">0</strong>
+       </div>
+       <div class="rounded-2xl bg-[#e8f7ff] p-3 text-center">
+        <span class="text-2xl">⏱️</span>
+        <p data-template-id="time-label" class="canva-text mt-1 font-bold" style="color: rgb(23, 110, 154); font-weight: 700; font-style: normal; font-size: 16px;">Total waktu</p><strong id="total-time" class="text-xl">00:00</strong>
+       </div>
+      </div>
+      <div id="award-box" class="mt-7 rounded-3xl border-2 border-[#ffd34e] bg-[#fff8dd] p-5">
+       <div id="award-icon" class="text-4xl">
+        🏆
+       </div>
+       <h3 id="award-title" class="title-font mt-2 text-2xl font-extrabold text-[#805b00]"></h3>
+       <p id="award-message" class="mt-2 text-lg font-bold text-[#604b20]"></p>
+      </div><button id="restart-button" data-template-id="restart-button" class="canva-button primary-btn mt-7 w-full px-6 py-4 text-xl font-extrabold" type="button" style="background: rgb(230, 57, 70); color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 22px;">🔄 MAIN LAGI</button>
+     </div>
+    </section>
+   </main>
+  </div>
+  <script>
+    const correctAnswers = ["B", "C", "C", "A", "C", "B", "C", "A", "B", "B"];
+    const views = document.querySelectorAll(".view");
+    const slides = document.querySelectorAll(".question-slide");
+    const timerDisplay = document.getElementById("timer-display");
+    const counter = document.getElementById("question-counter");
+    const progress = document.getElementById("progress-fill");
+    const nextButton = document.getElementById("next-button");
+    const feedbacks = document.querySelectorAll(".feedback");
+
+    let studentName = "";
+    let currentQuestion = 0;
+    let totalScore = 0;
+    let correctCount = 0;
+    let wrongCount = 0;
+    let unansweredCount = 0;
+    let totalSecondsUsed = 0;
+    let secondsLeft = 120;
+    let timerInterval = null;
+    let questionLocked = false;
+
+    function showView(id) {
+      views.forEach(view => view.classList.remove("active"));
+      document.getElementById(id).classList.add("active");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function formatTime(seconds) {
+      const minutes = Math.floor(seconds / 60);
+      const remainder = seconds % 60;
+      return String(minutes).padStart(2, "0") + ":" + String(remainder).padStart(2, "0");
+    }
+
+    function updateTimer() {
+      timerDisplay.textContent = formatTime(secondsLeft);
+    }
+
+    function clearTimer() {
+      if (timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+      }
+    }
+
+    function hideFeedback() {
+      feedbacks.forEach(item => item.classList.remove("visible"));
+    }
+
+    function resetAnswerButtons(questionIndex) {
+      const buttons = slides[questionIndex].querySelectorAll(".answer-btn");
+      buttons.forEach(button => {
+        button.disabled = false;
+        button.classList.remove("correct", "incorrect");
+      });
+    }
+
+    function startQuestion(index) {
+      currentQuestion = index;
+      questionLocked = false;
+      secondsLeft = 120;
+      updateTimer();
+      hideFeedback();
+      nextButton.classList.add("hidden");
+
+      slides.forEach(slide => slide.classList.add("hidden"));
+      slides[index].classList.remove("hidden");
+
+      resetAnswerButtons(index);
+      counter.textContent = "Soal " + (index + 1) + " dari 10";
+      progress.style.width = ((index + 1) * 10) + "%";
+
+      document.getElementById("sun-illustration").classList.toggle("visible", index === 5);
+      document.getElementById("compass-illustration").classList.toggle("visible", index === 9);
+
+      clearTimer();
+      timerInterval = setInterval(() => {
+        secondsLeft -= 1;
+        updateTimer();
+        if (secondsLeft <= 0) {
+          clearTimer();
+          handleTimeUp();
+        }
+      }, 1000);
+    }
+
+    function calculatePoints(secondsUsed) {
+      if (secondsUsed <= 30) return 100;
+      if (secondsUsed <= 60) return 80;
+      if (secondsUsed <= 90) return 60;
+      return 40;
+    }
+
+    function lockQuestion() {
+      questionLocked = true;
+      clearTimer();
+      slides[currentQuestion].querySelectorAll(".answer-btn").forEach(button => {
+        button.disabled = true;
+      });
+      totalSecondsUsed += (120 - secondsLeft);
+    }
+
+    function revealNextButton() {
+      nextButton.classList.remove("hidden");
+    }
+
+    function selectAnswer(button) {
+      if (questionLocked) return;
+
+      const chosenAnswer = button.dataset.option;
+      const isCorrect = chosenAnswer === correctAnswers[currentQuestion];
+      lockQuestion();
+
+      if (isCorrect) {
+        button.classList.add("correct");
+        totalScore += calculatePoints(120 - secondsLeft);
+        correctCount += 1;
+        document.getElementById("feedback-correct").classList.add("visible");
+      } else {
+        button.classList.add("incorrect");
+        wrongCount += 1;
+        document.getElementById("feedback-wrong").classList.add("visible");
+      }
+
+      revealNextButton();
+    }
+
+    function handleTimeUp() {
+      if (questionLocked) return;
+      lockQuestion();
+      unansweredCount += 1;
+      document.getElementById("feedback-time").classList.add("visible");
+      revealNextButton();
+    }
+
+    function awardFor(score) {
+      if (score >= 800) {
+        return ["🏆", "BINTANG GARUDA", "Luar biasa! Kamu sangat memahami materi Aku Anak Indonesia."];
+      }
+      if (score >= 600) {
+        return ["🌟", "BINTANG NUSANTARA", "Hebat! Pemahamanmu sudah sangat baik. Terus belajar!"];
+      }
+      if (score >= 400) {
+        return ["🥉", "SAHABAT INDONESIA", "Bagus! Kamu sudah memahami sebagian besar materi. Yuk, belajar lagi!"];
+      }
+      return ["🌱", "TERUS BERLATIH", "Jangan menyerah! Terus belajar dan berlatih agar semakin hebat."];
+    }
+
+    function createConfetti() {
+      const zone = document.getElementById("confetti-zone");
+      zone.innerHTML = "";
+      const colors = ["#e63946", "#ffd34e", "#42a5d4", "#44b86f", "#ff8f6a"];
+      for (let i = 0; i < 22; i++) {
+        const piece = document.createElement("span");
+        piece.className = "confetti-piece";
+        piece.style.left = (Math.random() * 96 + 2) + "%";
+        piece.style.background = colors[i % colors.length];
+        piece.style.animationDelay = (Math.random() * 1.8) + "s";
+        zone.appendChild(piece);
+      }
+    }
+
+    function showResults() {
+      clearTimer();
+      document.getElementById("student-celebration").textContent = "Hebat, " + studentName + "!";
+      document.getElementById("total-score").textContent = totalScore + " / 1000";
+      document.getElementById("correct-count").textContent = correctCount;
+      document.getElementById("wrong-count").textContent = wrongCount;
+      document.getElementById("unanswered-count").textContent = unansweredCount;
+      document.getElementById("total-time").textContent = formatTime(totalSecondsUsed);
+
+      const award = awardFor(totalScore);
+      document.getElementById("award-icon").textContent = award[0];
+      document.getElementById("award-title").textContent = award[1];
+      document.getElementById("award-message").textContent = award[2];
+
+      createConfetti();
+      showView("result-view");
+    }
+
+    function resetGame() {
+      clearTimer();
+      studentName = "";
+      currentQuestion = 0;
+      totalScore = 0;
+      correctCount = 0;
+      wrongCount = 0;
+      unansweredCount = 0;
+      totalSecondsUsed = 0;
+      secondsLeft = 120;
+      questionLocked = false;
+      document.getElementById("student-name").value = "";
+      document.getElementById("name-error").classList.add("hidden");
+      hideFeedback();
+      nextButton.classList.add("hidden");
+      slides.forEach((slide, index) => {
+        slide.classList.toggle("hidden", index !== 0);
+        resetAnswerButtons(index);
+      });
+      showView("name-view");
+    }
+
+    document.getElementById("start-button").addEventListener("click", () => showView("name-view"));
+
+    document.getElementById("name-form").addEventListener("submit", event => {
+      event.preventDefault();
+      const input = document.getElementById("student-name");
+      const error = document.getElementById("name-error");
+      const enteredName = input.value.trim();
+
+      if (!enteredName) {
+        error.classList.remove("hidden");
+        input.focus();
+        return;
+      }
+
+      studentName = enteredName;
+      error.classList.add("hidden");
+      showView("instruction-view");
+    });
+
+    document.getElementById("adventure-button").addEventListener("click", () => {
+      showView("quiz-view");
+      startQuestion(0);
+    });
+
+    document.querySelectorAll(".answer-btn").forEach(button => {
+      button.addEventListener("click", () => selectAnswer(button));
+    });
+
+    nextButton.addEventListener("click", () => {
+      if (currentQuestion < 9) {
+        startQuestion(currentQuestion + 1);
+      } else {
+        showResults();
+      }
+    });
+
+    document.getElementById("restart-button").addEventListener("click", resetGame);
+
+    document.addEventListener("DOMContentLoaded", () => {
+      lucide.createIcons();
+      updateTimer();
+    });
+  </script>
+ 
+</body></html>
